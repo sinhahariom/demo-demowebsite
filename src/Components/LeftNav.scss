@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100&display=swap');
+.left-nav-parent-wrapper{
+    display: flex;
+    flex-direction: row;
+    .nav-toggle-bar{
+        height: 100px;
+        width: 50px;
+        .bar{
+            height: 100%;
+            width: 100%;
+            background-color: rgb(255, 60, 60) ;
+            outline: none;
+            border: none;
+            border-bottom-right-radius: 10px ;
+            &:hover{
+                background-color: rgb(61, 98, 177);
+            }
+        }
+    }  
+.left-nav-wrapper{
+    width: 220px;
+    background-color: #021b38ed;  
+    display: flex;
+    flex-direction: column;
+    font-family: 'Work Sans', sans-serif;
+    .logo-wrapper{
+        height: 25%;
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        padding-left: 35%;
+        margin-bottom: 0%;
+        @media (max-width : 575px) {
+            height: 15%;
+        }
+        img{
+            height: 70px;
+            width: 70px;
+        }
+    }
+    .nav-options-wrapper{
+        display: flex;
+        flex-direction: row;
+        padding-left: 10%;
+        align-items: center;
+        padding-bottom: 5%;
+        span{
+            height: fit-content;
+            margin: 2%;
+            font-weight: bold;
+            font-size: 1rem;
+            color: white;
+            padding-left: 2%;
+        }
+        img{
+            height: 20px;
+            width: 20px;
+        }
+    }
+    .span{
+        width: fit-content;
+        margin-top: 0%;
+        color: rgb(255, 249, 249);
+        font-weight: bold;
+        padding-left: 8%;
+        margin-bottom: 20%;
+        &:hover{
+        }
+    }
+}
+}
